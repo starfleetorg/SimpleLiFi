@@ -1,4 +1,4 @@
-# ArduLiFi
+# BasicLiFi
 A simple set of programs to allow one Arduino to send binary data to another Arduino using only light and a light-detecting sensor
 ## Direction of use
 1. Connect a small light (LED/Laser/etc) to the digital pin 13 of one Arduino
