@@ -1,0 +1,3 @@
+v1: Initial version
+v2: Better formatted output
+v3: Can be easily configured using only variables

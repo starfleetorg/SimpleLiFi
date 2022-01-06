@@ -1,0 +1,4 @@
+v1: Initial version, can only send pre-programmed string of bits
+v2: Can receive bit over serial, and send then one byte at a time, if more than 8 bits where provided in one line, it would cause an overflow error, as only the first 8 bits are sent. The 8 bits limit is intentionally implemented as anything above 8-10 bits would cause data corruption as the clocks would get out of sync 
+v3: Can send theoretically infinite amount of data, as this version would organize the data into bytes automatically, so it can disconnect and reconnect before sending each one of the bytes one-by-one. This disconnect and reconnect action is achieved by intentionally waiting for the receiving end to timeout, and re-establish a session by sending a new start bit before sending the next 8 bits
+v4: Can be easily configured using only variables
